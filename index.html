@@ -7,8 +7,8 @@
     <!-- Daisy Ul -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- font -->
-     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Css link -->
+    <link rel="stylesheet" href="./tailwind.int.css">
 
      <!-- font awsome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
@@ -22,10 +22,10 @@
     <div class="flex flex-col items-center sm:flex-row sm:items-center gap-2 sm:gap-3">
       <img src="./assets/logo.png" 
            alt="logo" 
-           class="w-[32px] h-[32px] sm:w-[50px] sm:h-[50px]">
+           class="w-[32px] h-[32px] sm:w-[70px] sm:h-[70px]">
       <div class="font-bold font-hind text-[#006747] text-[14px] sm:text-[20px] leading-tight text-center sm:text-left">
-        <h1>Emergency</h1>
-        <h1>Service</h1>
+        <h1 class="text-[28px]">Emergency</h1>
+        <h1 class="text-[28px]">Service</h1>
       </div>
     </div>
 
@@ -48,9 +48,9 @@
 
       
       <div class="flex items-center gap-1 sm:gap-2 bg-[#00a63e] rounded-full 
-                  w-[85px] h-[36px] sm:w-[106px] sm:h-[52px] justify-center text-white font-semibold">
-        <h2 class="text-sm sm:text-base">0</h2>
-        <h2 class="text-sm sm:text-base">Copy</h2>
+                  w-[85px] h-[36px] sm:w-[106px] sm:h-[52px] justify-center text-white font-semibold">  
+        <button id="copy-counter">0 Copy</button>
+
       </div>
 
     </div>
@@ -79,7 +79,7 @@
         <section id="poroduct-box" class=" Card Section	col-span-9 order-1 md:order-1">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!-- daisy -->
-            <div class="card bg-base-100 w-full shadow-sm ">
+            <div class="  card-copy  card bg-base-100 w-full shadow-sm ">
                 <div class="container ml-[-110] ">
                 <div class="main flex items-center justify-between ml-6 pt-6">
                     <div class="bg-[#ffe3e2] h-[50px] w-[50px]  rounded-xl"><img src="./assets/emergency.png" alt="" class="w-[30px] m-auto mt-[10px]"></div>
@@ -87,20 +87,20 @@
                 </div>
                 </div>
                 <div class="card-body">
-                    <h2 class="card-title font-bold">
+                    <h2 class="card-title font-bold font-hind">
                     National Emergency Number
                     </h2>
-                    <p class="mt-[-7px] text-[#5c5c5c]">National Emergency</p>
-                    <h1 class="font-bold text-2xl">999</h1>
-                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c]">All</div>
+                    <p class="mt-[-7px] text-[#5c5c5c] font-roboto">National Emergency</p>
+                    <h1 class="number   font-bold text-2xl">999</h1>
+                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c] font-hind">All</div>
                     <div class="card-actions justify-between mt-4">
-                        <div class="badge badge- hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
+                        <div class="copy-number  badge badge- hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
                             <div class="m-auto flex gap-2 items-center ">
                                 <button><i class="fa-regular fa-copy ">
                             </i> Copy </button>
                             </div>
                         </div>
-                        <div class=" call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#8c8d94] text-white  w-[150px] md:w-[180px]" data-Name=" National Emergency" data-Number=" 999">
+                        <div class=" call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#5c8d60] text-white  w-[150px] md:w-[180px]" data-Name=" National Emergency" data-Number=" 999">
                             <div class="  flex items-center gap-2"> 
                                 <img src="./assets/call.png" alt="">    
                                 <button>Call</button>
@@ -111,7 +111,7 @@
                 
                 </div>
                 <!-- daisy -->
-            <div class="card bg-base-100 w-full shadow-sm ">
+            <div class="card-copy  card bg-base-100 w-full shadow-sm ">
                 <div class="container ml-[-110] ">
                 <div class="main flex items-center justify-between ml-6 pt-6">
                     <div class="bg-[#dfefff] h-[50px] w-[50px]  rounded-xl"><img src="./assets/police.png" alt="" class="w-[30px] m-auto mt-[10px]"></div>
@@ -119,20 +119,20 @@
                 </div>
                 </div>
                 <div class="card-body">
-                    <h2 class="card-title font-bold">
+                    <h2 class="card-title font-bold font-hind">
                     Police Helpline Number
                     </h2>
-                    <p class="mt-[-7px] text-[#5c5c5c]">Police</p>
-                    <h1 class="font-bold text-2xl">999</h1>
-                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c]">Police</div>
+                    <p class="mt-[-7px] text-[#5c5c5c] font-roboto">Police</p>
+                    <h1 class="number   font-bold text-2xl">999</h1>
+                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c] font-hind">Police</div>
                     <div class="card-actions justify-between mt-4">
-                        <div class="badge badge- hover:bg-[#8c8d94] hover:text-white   w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
+                        <div class="copy-number  badge badge- hover:bg-[#8c8d94] hover:text-white   w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
                             <div class="m-auto flex gap-2 items-center ">
                          <button><i class="fa-regular fa-copy ">
                             </i> Copy </button>
                             </div>
                         </div>
-                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#8c8d94] text-white  w-[150px] md:w-[180px]" data-Name=" Police" data-Number=" 999" >
+                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#5c8d60] text-white  w-[150px] md:w-[180px]" data-Name=" Police" data-Number=" 999" >
                             <div class="flex items-center gap-2"> 
                                 <img src="./assets/call.png" alt="">    
                                 <button>Call</button>
@@ -143,7 +143,7 @@
                 
                 </div>
                 <!-- daisy -->
-            <div class="card bg-base-100 w-full shadow-sm ">
+            <div class="card-copy  card bg-base-100 w-full shadow-sm ">
                 <div class="container ml-[-110] ">
                 <div class="main flex items-center justify-between ml-6 pt-6">
                     <div class="bg-[#ffe3e2] h-[50px] w-[50px]  rounded-xl"><img src="./assets/fire-service.png" alt="" class="w-[30px] m-auto mt-[10px]"></div>
@@ -151,20 +151,20 @@
                 </div>
                 </div>
                 <div class="card-body">
-                    <h2 class="card-title font-bold">
+                    <h2 class="card-title font-bold font-hind">
                     Fire Service Number
                     </h2>
-                    <p class="mt-[-7px] text-[#5c5c5c]">Fire Service</p>
-                    <h1 class="font-bold text-2xl">999</h1>
-                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c]">Fire</div>
+                    <p class="mt-[-7px] text-[#5c5c5c] font-roboto">Fire Service</p>
+                    <h1 class="number   font-bold text-2xl">999</h1>
+                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c] font-hind">Fire</div>
                     <div class="card-actions justify-between mt-4">
-                        <div class="badge badge- hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
+                        <div class="copy-number  badge badge- hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
                             <div class="m-auto flex gap-2 items-center ">
                             <button><i class="fa-regular fa-copy ">
                             </i> Copy </button>
                             </div>
                         </div>
-                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#8c8d94] text-white  w-[150px] md:w-[180px]" data-Name=" Fire Service" data-Number=" 999">
+                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#5c8d60] text-white  w-[150px] md:w-[180px]" data-Name=" Fire Service" data-Number=" 999">
                             <div class="flex items-center gap-2"> 
                                 <img src="./assets/call.png" alt="">    
                                 <button>Call</button>
@@ -175,7 +175,7 @@
                 
                 </div>
                 <!-- daisy -->
-            <div class="card bg-base-100 w-full shadow-sm ">
+            <div class="card-copy  card bg-base-100 w-full shadow-sm ">
                 <div class="container ml-[-110] ">
                 <div class="main flex items-center justify-between ml-6 pt-6">
                     <div class="bg-[#ffe3e2] h-[50px] w-[50px]  rounded-xl"><img src="./assets/ambulance.png" alt="" class="w-[30px] m-auto mt-[10px]"></div>
@@ -183,20 +183,20 @@
                 </div>
                 </div>
                 <div class="card-body">
-                    <h2 class="card-title font-bold">
+                    <h2 class="card-title font-bold font-hind">
                     Ambulance Service
                     </h2>
-                    <p class="mt-[-7px] text-[#5c5c5c]">Ambulance</p>
-                    <h1 class="font-bold text-2xl">1994-999999</h1>
-                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c]">Health</div>
+                    <p class="mt-[-7px] text-[#5c5c5c] font-roboto">Ambulance</p>
+                    <h1 class="number   font-bold text-2xl">1994-999999</h1>
+                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c] font-hind">Health</div>
                     <div class="card-actions justify-between mt-4">
-                        <div class="badge badge- hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
+                        <div class="copy-number  badge badge- hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
                             <div class="m-auto flex gap-2 items-center ">
                         <button><i class="fa-regular fa-copy ">
                             </i> Copy </button>
                             </div>
                         </div>
-                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#8c8d94] text-white  w-[150px] md:w-[180px]" data-Name=" Ambulance" data-Number=" 1994-999999">
+                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#5c8d60] text-white  w-[150px] md:w-[180px]" data-Name=" Ambulance" data-Number=" 1994-999999">
                             <div class="flex items-center gap-2"> 
                                 <img src="./assets/call.png" alt="">    
                                 <button>Call</button>
@@ -207,7 +207,7 @@
                 
                 </div>
                 <!-- daisy -->
-            <div class="card bg-base-100 w-full shadow-sm ">
+            <div class="card-copy  card bg-base-100 w-full shadow-sm ">
                 <div class="container ml-[-110] ">
                 <div class="main flex items-center justify-between ml-6 pt-6">
                     <div class="bg-[#ffe3e2] h-[50px] w-[50px]  rounded-xl"><img src="./assets/imgi_19_charity-multicolor-logo-png-illustration_946288-47225-depositphotos-bgremover.png" alt="" class="w-[30px] m-auto mt-[10px]"></div>
@@ -215,20 +215,20 @@
                 </div>
                 </div>
                 <div class="card-body">
-                    <h2 class="card-title font-bold">
+                    <h2 class="card-title font-bold font-hind">
                     Women & Child Helpline
                     </h2>
-                    <p class="mt-[-7px] text-[#5c5c5c]">Women & Child Helpline</p>
-                    <h1 class="font-bold text-2xl">109</h1>
-                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c]">Help</div>
+                    <p class="mt-[-7px] text-[#5c5c5c] font-roboto">Women & Child Helpline</p>
+                    <h1 class="number   font-bold text-2xl">109</h1>
+                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c] font-hind">Help</div>
                     <div class="card-actions justify-between mt-4">
-                        <div class="badge badge-  hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
+                        <div class=" copy-number  badge badge-  hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
                             <div class="m-auto flex gap-2 items-center ">
                         <button><i class="fa-regular fa-copy ">
                             </i> Copy </button>
                             </div>
                         </div>
-                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#8c8d94] text-white  w-[150px] md:w-[180px]" data-Name=" Women & Child Helpline"data-Number=" 109">
+                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#5c8d60] text-white  w-[150px] md:w-[180px]" data-Name=" Women & Child Helpline"data-Number=" 109">
                             <div class="flex items-center gap-2"> 
                                 <img src="./assets/call.png" alt="">    
                                 <button>Call</button>
@@ -239,29 +239,29 @@
                 
                 </div>
                 <!-- daisy -->
-            <div class="card bg-base-100 w-full shadow-sm ">
+            <div class="  card-copy  card bg-base-100 w-full shadow-sm ">
                 <div class="container ml-[-110] ">
                 <div class="main flex items-center justify-between ml-6 pt-6">
                     <div class="bg-[#ffe3e2] h-[50px] w-[50px]  rounded-xl"><img src="./assets/entii-removebg-preview.png" alt="" class="w-[30px] m-auto mt-[10px]"></div>
-                    <div class="love-Icon mr-7 w-6 h-6 hover:text-[#4ed44a]"><i class="fa-regular fa-heart text-[24px]"></i></div>
+                    <div class="icon love-Icon mr-7 w-6 h-6 hover:text-[#4ed44a]"><i class="fa-regular fa-heart text-[24px]"></i></div>
                 </div>
                 </div>
                 <div class="card-body">
-                    <h2 class="card-title font-bold">
+                    <h2 class="card-title font-bold font-hind">
                     Anti-Corruption Helpline
                     </h2>
-                    <p class="mt-[-7px] text-[#5c5c5c]">Anti-Corruption</p>
-                    <h1 class="font-bold text-2xl">106</h1>
-                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c]">Govt.</div>
+                    <p class="mt-[-7px] text-[#5c5c5c] font-roboto">Anti-Corruption</p>
+                    <h1 class="number   font-bold text-2xl">106</h1>
+                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c] font-hind">Govt.</div>
                     <div class="card-actions justify-between mt-4">
-                        <div class="badge badge- hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
+                        <div class="copy-number  badge badge- hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
                             <div class="m-auto flex gap-2 items-center ">
-                            <button><i class="fa-regular fa-copy ">
+                                <button><i class="fa-regular fa-copy ">
                             </i> Copy </button>
                             </div>
                         </div>
-                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#8c8d94] text-white  w-[150px] md:w-[180px]" data-Name=" Anti-Corruption"data-Number=" 106">
-                            <div class="flex items-center gap-2"> 
+                        <div class=" call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#5c8d60] text-white  w-[150px] md:w-[180px]" data-Name=" National Emergency" data-Number=" 999">
+                            <div class="  flex items-center gap-2"> 
                                 <img src="./assets/call.png" alt="">    
                                 <button>Call</button>
                             </div>
@@ -271,7 +271,7 @@
                 
                 </div>
                 <!-- daisy -->
-            <div class="card bg-base-100 w-full shadow-sm ">
+            <div class="card-copy  card bg-base-100 w-full shadow-sm ">
                 <div class="container ml-[-110] ">
                 <div class="main flex items-center justify-between ml-6 pt-6">
                     <div class="bg-[#ffe3e2] h-[50px] w-[50px]  rounded-xl"><img src="./assets/electrical-logo-design-template-bolt-energy-symbol.png" alt="" class="w-[40px] m-auto mt-[8px]"></div>
@@ -279,20 +279,20 @@
                 </div>
                 </div>
                 <div class="card-body">
-                    <h2 class="card-title font-bold">
+                    <h2 class="card-title font-bold font-hind">
                     Electricity Helpline
                     </h2>
-                    <p class="mt-[-7px] text-[#5c5c5c]">Electricity Outage</p>
-                    <h1 class="font-bold text-2xl">16216</h1>
-                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c]">Electricity</div>
+                    <p class="mt-[-7px] text-[#5c5c5c] font-roboto">Electricity Outage</p>
+                    <h1 class="number   font-bold text-2xl">16216</h1>
+                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c] font-hind">Electricity</div>
                     <div class="card-actions justify-between mt-4">
-                        <div class="badge badge-  hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
+                        <div class="copy-number  badge badge-  hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
                             <div class="m-auto flex gap-2 items-center ">
                              <button><i class="fa-regular fa-copy ">
                             </i> Copy </button>
                             </div>
                         </div>
-                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#8c8d94] text-white  w-[150px] md:w-[180px]" data-Name=" Electricity Outage"data-Number=" 16216">
+                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#5c8d60] text-white  w-[150px] md:w-[180px]" data-Name=" Electricity Outage"data-Number=" 16216">
                             <div class="flex items-center gap-2"> 
                                 <img src="./assets/call.png" alt="">    
                                 <button>Call</button>
@@ -303,7 +303,7 @@
                 
                 </div>
                 <!-- daisy -->
-            <div class="card bg-base-100 w-full shadow-sm ">
+            <div class="card-copy  card bg-base-100 w-full shadow-sm ">
                 <div class="container ml-[-110] ">
                 <div class="main flex items-center justify-between ml-6 pt-6">
                     <div class="bg-[#ffe3e2] h-[50px] w-[50px]  rounded-xl"><img src="./assets/brac.png" alt="" class="w-[30px] m-auto mt-[10px]"></div>
@@ -311,20 +311,20 @@
                 </div>
                 </div>
                 <div class="card-body">
-                    <h2 class="card-title font-bold">
+                    <h2 class="card-title font-bold font-hind">
                     Brac Helpline
                     </h2>
-                    <p class="mt-[-7px] text-[#5c5c5c]">Brac</p>
-                    <h1 class="font-bold text-2xl">16445</h1>
-                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c]">NGO</div>
+                    <p class="mt-[-7px] text-[#5c5c5c] font-roboto">Brac</p>
+                    <h1 class="number   font-bold text-2xl">16445</h1>
+                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c] font-hind">NGO</div>
                     <div class="card-actions justify-between mt-4">
-                        <div class="badge badge-  hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px]  border-1 border-[#d4d6d5] h-[40px] ">
+                        <div class="copy-number  badge badge-  hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px]  border-1 border-[#d4d6d5] h-[40px] ">
                             <div class="m-auto flex gap-2 items-center ">
                              <button><i class="fa-regular fa-copy ">
                             </i> Copy </button>
                             </div>
                         </div>
-                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#8c8d94] text-white : w-[150px] md:w-[180px]"data-Name=" Brac"data-Number=" 16445">
+                        <div class="call-btn badge badge- bg-green-500 h-[40px] hover:bg-[#5c8d60] text-white : w-[150px] md:w-[180px]"data-Name=" Brac"data-Number=" 16445">
                             <div class="flex items-center gap-2"> 
                                 <img src="./assets/call.png" alt="">    
                                 <button>Call</button>
@@ -335,7 +335,7 @@
                 
                 </div>
                 <!-- daisy -->
-            <div class="card bg-base-100 w-full shadow-sm ">
+            <div class="card-copy  card bg-base-100 w-full shadow-sm ">
                 <div class="container ml-[-110] ">
                 <div class="main flex items-center justify-between ml-6 pt-6">
                     <div class="bg-[#ffe3e2] h-[50px] w-[50px]  rounded-xl"><img src="./assets/Bangladesh-Railway.png" alt="" class="w-[30px] m-auto mt-[10px]"></div>
@@ -343,20 +343,20 @@
                 </div>
                 </div>
                 <div id="rail" class="card-body">
-                    <h2 class="card-title font-bold" >
+                    <h2 class="card-title font-bold font-hind" >
                     Bangladesh Railway Helpline 
                     </h2>
-                    <p class="mt-[-7px] text-[#5c5c5c]">Bangladesh Railway</p>
-                    <h1 class="font-bold text-2xl">163</h1>
-                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c]">Travel</div>
+                    <p class="mt-[-7px] text-[#5c5c5c] font-roboto">Bangladesh Railway</p>
+                    <h1 class="number   font-bold text-2xl">163</h1>
+                    <div class="badge badge- bg-[#f2f2f2] rounded-xl h-[35px] text-[#5c5c5c] font-hind">Travel</div>
                     <div class="card-actions justify-between mt-4">
-                        <div class="badge badge- hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
+                        <div class="copy-number  badge badge- hover:bg-[#8c8d94] hover:text-white  w-[150px] md:w-[180px] border-1 border-[#d4d6d5] h-[40px] ">
                             <div class="m-auto flex gap-2 items-center ">
                             <button><i class="fa-regular fa-copy ">
                             </i> Copy </button>
                             </div>
                         </div>
-                        <div id="btn-call" class="call-btn badge badge- hover:bg-[#8c8d94] bg-green-500 h-[40px] text-white  w-[150px] md:w-[180px]" data-Name=" Bangladesh Railway" data-Number=" 163...">
+                        <div id="btn-call" class="call-btn badge badge- hover:bg-[#5c8d60] bg-green-500 h-[40px] text-white  w-[150px] md:w-[180px]" data-Name=" Bangladesh Railway" data-Number=" 163...">
                             <div class="flex items-center gap-2"> 
                                 <img src="./assets/call.png" alt="">    
                                 <button>Call</button>
@@ -381,11 +381,11 @@
             
         <div class="flex items-center gap-2 sm:gap-3">
         <img src="./assets/clock.png" alt="clock" class="w-5 h-5 sm:w-6 sm:h-6">
-        <p class="font-semibold text-sm sm:text-base">Call History</p>
+        <p class="font-semibold text-sm sm:text-base font-hind">Call History</p>
         </div>
 
         <button id="clear-btn"
-        class=" btn-clear  bg-[#00a63e] rounded-full px-4 py-2 sm:px-5 sm:py-2 text-white text-sm sm:text-base font-semibold">
+        class=" btn-clear  bg-[#00a63e] rounded-full px-4 py-2 sm:px-7 sm:py-2 hover:bg-[#5c8d60] font-hind text-white text-sm sm:text-base font-semibold">
         Clear
         </button>
     </div>
