@@ -46,14 +46,14 @@ for (const btn of callButtons) {
       const time = new Date().toLocaleTimeString();
       const newCart = document.createElement("div");
       newCart.className =
-        "flex justify-between items-center mt-2 bg-green-100 rounded-lg p-3 shadow";
+        "flex justify-between items-center mt-5 bg-[#fafafa] rounded-lg p-3 shadow";
 
       newCart.innerHTML = `
         <div class="flex flex-col">
-          <span class="font-semibold text-sm">${callingName}</span>
-          <span class="text-gray-600 text-xs">${callingNumber}</span>
+          <span class="font-semibold text-[18px]">${callingName}</span>
+          <span class="text-[#5c5c5c] text-[18px]">${callingNumber}</span>
         </div>
-        <span class="text-gray-500 text-xs">${time}</span>
+        <span class="text-black text-[18px]">${time}</span>
       `;
 
       cartBox.appendChild(newCart); 
@@ -62,7 +62,7 @@ for (const btn of callButtons) {
 }
 
 clearBtn.addEventListener("click", function () {
-  if (cartBox.children.length > 1) {
+  while (cartBox.children.length > 1) {
     cartBox.removeChild(cartBox.lastChild);
   }
 });
